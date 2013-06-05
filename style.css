@@ -1,0 +1,1236 @@
+/*
+
+Theme Name: Bookworms Early Learning Center
+
+Theme URI: www.bookwormselc.com
+
+Description: The custom theme for Bookworms Early Learning Center using the parent theme Twentyeleven.
+
+Author: LeeAnn Kinney
+
+Author URI: www.leekinney.com
+
+Template: twentyeleven
+
+Version: 0.1.0
+
+*/
+
+
+
+@import url("../twentyeleven/style.css");
+
+
+
+@font-face {
+
+    font-family: 'verb_lightregular';
+
+    src: url('fonts/VerbLight-webfont.eot');
+
+    src: url('fonts/VerbLight-webfont.eot?#iefix') format('embedded-opentype'),
+
+         url('fonts/VerbLight-webfont.woff') format('woff'),
+
+         url('fonts/VerbLight-webfont.ttf') format('truetype'),
+
+         url('fonts/VerbLight-webfont.svg#verb_lightregular') format('svg');
+
+    font-weight: normal;
+
+    font-style: normal;
+
+}
+
+
+
+@font-face {
+
+    font-family: 'verb_semiboldregular';
+
+    src: url('fonts/VerbSemibold-webfont.eot');
+
+    src: url('fonts/VerbSemibold-webfont.eot?#iefix') format('embedded-opentype'),
+
+         url('fonts/VerbSemibold-webfont.woff') format('woff'),
+
+         url('fonts/VerbSemibold-webfont.ttf') format('truetype'),
+
+         url('fonts/VerbSemibold-webfont.svg#verb_semiboldregular') format('svg');
+
+    font-weight: normal;
+
+    font-style: normal;
+
+}
+
+
+
+@font-face {
+
+    font-family: 'verb_regularbold';
+
+    src: url('fonts/VerbBold-webfont.eot');
+
+    src: url('fonts/VerbBold-webfont.eot?#iefix') format('embedded-opentype'),
+
+         url('fonts/VerbBold-webfont.woff') format('woff'),
+
+         url('fonts/VerbBold-webfont.ttf') format('truetype'),
+
+         url('fonts/VerbBold-webfont.svg#verb_regularbold') format('svg');
+
+    font-weight: normal;
+
+    font-style: normal;
+
+}
+
+
+
+/*
+
+    PAGE CONSTANTS
+
+*/
+
+
+
+body {
+
+    background: url(./images/furley_bg.png);
+
+    font: 1em 'verb_lightregular', sans-serif;
+
+    line-height: 1.5em;
+
+}
+
+
+
+img {
+
+    border: none;
+
+    max-width: 100%;
+
+    height: auto;
+
+}
+
+
+
+#page {
+
+    background: url(./images/furley_bg.png);
+
+    margin: 0 auto;
+
+    width: 100%;
+
+}
+
+
+
+h1 {
+
+    font-family: 'verb_regularbold', sans-serif;
+
+    font-size: 1.25em;
+
+}
+
+
+
+h2 {
+
+    font-family: 'verb_regularbold', sans-serif;
+
+    font-size: 1em;
+
+}
+
+
+
+p {
+
+    font-family: 'verb_lightregular', sans-serif;
+
+}
+
+
+
+#logo {
+
+    float: left;
+
+    width: 60%;
+
+}
+
+
+
+.hentry, .no-results {
+
+    border: none;
+
+}
+
+
+
+.nopassword, .nocomments {
+
+    display: none;
+
+}
+
+
+
+.entry-title {
+
+    display: none;
+
+}
+
+
+
+.location {
+
+    padding-left: 20%;
+
+}
+
+
+
+/*
+
+    IMAGES
+
+*/
+
+
+
+img[class*="align"], img[class*="wp-image-"], #content .gallery-icon img {
+
+    border: none;
+
+    padding: 0;
+
+}
+
+
+
+/* 
+
+    IMAGE GALLERY
+
+*/
+
+
+
+#content .gallery .gallery-icon img {
+
+    border: 2px #ccc dotted;
+
+    margin: 10px;
+
+    padding: 0;
+
+}
+
+
+
+#imageData #imageDetails {
+
+    display: none;
+
+}
+
+
+
+#content .gallery {
+
+    float: right;
+
+}
+
+
+
+/*
+
+    WIDGETS
+
+*/
+
+
+
+.widget-title {
+
+    color: #333;
+
+    font-family: 'verb_semiboldregular', sans-serif;
+
+    text-align: center;
+
+}
+
+
+
+.widget-area a {
+
+    color: #333;
+
+    font-family: 'verb_lightregular', sans-serif;
+
+    font-size: 1em;
+
+}
+
+
+
+/*
+
+    SEARCH
+
+*/
+
+
+
+#branding .only-search #s, #branding .only-seach #s:focus {
+
+    display: none;
+
+}
+
+
+
+/*
+
+    NAVIGATION
+
+*/
+
+
+
+#access {
+
+    background: none;
+
+    box-shadow: none;
+
+    float: right;
+
+    margin-top: -92px;
+
+    height: 120px;     
+
+}
+
+
+
+#access ul {
+
+    float: right;
+
+}
+
+
+
+#access li {
+
+    height: 100px;
+
+    text-align: center;
+
+    width: 25%;
+
+}
+
+
+
+#access li a {
+
+    color: #333;
+
+    font-family:'verb_lightregular', sans-serif;
+
+    font-size: 1.250em;
+
+}
+
+
+
+#access a {
+
+   line-height: 1.5em;
+
+   padding-top: 75px;
+
+}
+
+
+
+#access li:hover > a, #access ul ul *:hover > a, #access a:focus {
+
+    background: none; 
+
+}
+
+
+
+#access li:hover > a, #access a:focus {
+
+    background: none;
+
+}
+
+
+
+#access li.current-menu-item {
+
+    height: 120px;
+
+}
+
+
+
+#access .current-menu-item > a, #access .current-menu-ancestor > a, #access .current_page_item > a, #access .current_page_ancestor > a {
+
+    padding-top: 90px;
+
+    font-family: 'verb_regularbold', sans-serif;
+
+}
+
+
+
+#menu-item-250 {
+
+    background-image: url(./images/about.jpg);   
+
+}
+
+
+
+#menu-item-257 {
+
+    background-image: url(./images/tuition.jpg);  
+
+}
+
+
+
+#menu-item-254 {
+
+    background-image: url(./images/current.jpg);
+
+}
+
+
+
+#menu-item-256 {
+
+    background-image: url(./images/apply.png);
+
+}
+
+
+
+#menu-item-104:hover, #menu-item-105:hover, #menu-item-106:hover, #menu-item-107:hover {
+
+    opacity: 0.8;
+
+}
+
+
+
+/*
+
+    SIDE MENU
+
+*/
+
+
+
+#secondary ul {
+
+    list-style: none;
+
+}
+
+
+
+.left-sidebar #secondary {
+
+    margin-top: 5%;
+
+}
+
+
+
+#menu-item-255 a, #menu-item-252 a, #menu-item-251 a{
+
+    font-family: 'verb_lightregular', sans-serif;
+
+    font-size: 1.067em;
+
+    line-height: 2em;
+
+    text-transform: uppercase;
+
+    text-decoration: none;
+
+}
+
+
+
+#menu-item-255 a{
+
+    color: #ff9900;
+
+    border-bottom: dotted #ff9900 2px;
+
+}
+
+
+
+#menu-item-255 a:hover {
+
+    color: #ff6600;
+
+}
+
+
+
+#menu-item-252 a{
+
+    color: #ffcc33;
+
+    border-bottom: dotted #ffcc33 2px;
+
+}
+
+
+
+#menu-item-252 a:hover {
+
+    color: #cc9900;
+
+}
+
+
+
+#menu-item-251 a{
+
+    color: #33cccc;
+
+    border-bottom: dotted #33cccc 2px;
+
+}
+
+
+
+#menu-item-251 a:hover {
+
+    color: #009999;
+
+}
+
+
+
+#menu-item-253 {
+
+    margin-top: 40px;
+
+    margin-bottom: -20px;
+
+}
+
+
+
+#menu-item-253 a {
+
+    color: #99cc66;
+
+    font-family: 'verb_regularbold', sans-serif;
+
+    font-size: 1.250em;
+
+}
+
+
+
+#menu-item-253 a:hover {
+
+    color: #669933;
+
+}
+
+
+
+/*
+
+    ABOUT
+
+*/
+
+
+
+.about {
+
+    color: #339999;
+
+    font-family: 'verb_lightregular', sans-serif;
+
+}
+
+
+
+.equal-op {
+
+    border: dotted #CC3300 2px;
+
+    color: #CC3300;
+
+    font-family: 'verb_lightregular', sans-serif;
+
+    font-size: 0.750em;
+
+    padding: 5px;
+
+}
+
+
+
+/*
+
+    TEACHER BIOS
+
+*/
+
+.teacher {
+
+    font-family: 'verb_regularbold';
+
+}
+
+
+
+/*
+
+    TUITION
+
+*/
+
+.tuition {
+
+    color: #339999;
+
+    font-family: 'verb_lightregular', sans-serif;
+
+}
+
+
+
+.tuition p {
+
+    margin-left: 3%;
+
+}
+
+
+
+.tuition a {
+
+    color: #339999;
+
+}
+
+
+
+.tuition-scale {
+
+    margin-left: 4%;
+
+}
+
+.tuition-scale img {
+
+   
+
+}
+
+
+
+.singular #content, .left-sidebar.singular #content {
+
+    margin: 0 5%;
+
+} 
+
+
+
+/*
+
+    LOCATION
+
+*/
+
+.hours {
+
+    font-size: 1.125em;
+
+}
+
+
+
+a:hover {
+
+    color: #ff6600;
+
+}
+
+
+
+/*
+
+    APPLICATION
+
+*/
+
+
+
+.apply {
+
+    color: #669933;
+
+}
+
+
+
+.singular .entry-header, .singular .entry-content, .singular footer.entry-meta, .singular #comments-title {
+
+    width: 100%;
+
+}
+
+
+
+div.wpcf7 {
+
+    width: 100%;
+
+}
+
+
+
+#application {
+
+    width: 100%;
+
+}
+
+
+
+#child, #birth, #parent1, #parent2 li {
+
+    font-family: 'verb_lightregular', sans-serif;
+
+    list-style: none;
+
+    display: inline-block;
+
+}
+
+
+
+#child {
+
+    float: left;
+
+    width: 40%;
+
+}
+
+
+
+#birth {
+
+    float: right;
+
+    width: 40%;
+
+}
+
+
+
+#parent1 {
+
+    float: left;
+
+    width: 40%;
+
+}
+
+
+
+#parent2 {
+
+    float: right;
+
+    width: 40%;
+
+}
+
+
+
+span.wpcf7-not-valid-tip {
+
+    border: 1px dotted  #ff6600;
+
+    font-size: 8pt;
+
+    left: 50%;
+
+    position: absolute;
+
+    top: 0;
+
+    width: inherit;
+
+}
+
+/*
+
+    FOOTER
+
+*/
+
+
+
+#supplementary {
+
+    background-image: url(./images/footer.png);
+
+    margin-left: -3%;
+
+    padding: 1.625em 1% 0 14%;
+
+    width: 90%;
+
+}
+
+
+
+#supplementary.two
+
+.widget-area {
+
+  margin-left: 10%;
+
+	width: 38%;
+
+}
+
+
+
+#site-generator {
+
+    background-image: url(./images/footer.png);
+
+    border-top: none;
+
+    margin-bottom: 0;
+
+    padding: 0;
+
+    width: 100%;
+
+}
+
+
+
+/*
+
+    MEDIA QUERIES
+
+*/
+
+
+
+@media (max-width: 800px){
+
+    #logo {
+
+	   width: 45%;
+
+    }
+
+    #logoSM {
+
+	   display: none;
+
+    }
+
+    #access {
+
+        float: right;
+
+        height: 120px;
+
+        margin-top: -13%;
+
+        margin-right: -15%;
+
+	}
+
+    #access ul {
+
+        float: right;    
+
+    }
+
+    #access li{
+
+        width: 20%;
+
+        height: 100px;
+
+    }
+
+    #access a {
+
+	   padding-top: 0;
+
+    }
+
+    #access li a {
+
+	   padding-bottom: 70px;
+
+	   padding-top: 70px;
+
+	   text-decoration: none;
+
+        -webkit-transform: rotate(-90deg);
+
+        -moz-transform: rotate(-90deg);
+
+        -ms-transform: rotate(-90deg);
+
+        -o-transform: rotate(-90deg);
+
+        filter: progid:DXImageTransform.Miscrosoft.BasicImage (rotation=3);
+
+    }
+
+    .tuition-scale img {
+
+        width: 100%;
+
+        max-width: 300px;
+
+    }
+
+    #birth {
+
+        float: none;
+
+        width: 100%;
+
+    }
+
+    #parent2 {
+
+        float: none;
+
+        width: 100%;
+
+    }
+
+    #supplementary {
+
+        margin-left: -5%;
+
+        width: 100%;
+
+    }
+
+}
+
+
+
+@media (max-width: 650px) {
+
+ 
+
+    #logo {
+
+        width: 45%;
+
+    }
+
+    #access {
+
+        float: right;
+
+	   margin: -13% -40% 0 0;
+
+    }
+
+    #access li{
+
+	   width: 15%;
+
+       height: 120px;
+
+        
+
+    }
+
+    #access li a {
+
+        font-size: 20px;
+
+	   padding-bottom: 70px;
+
+	   padding-top: 70px;
+
+        text-decoration: none;
+
+        -webkit-transform: rotate(-90deg);
+
+        -moz-transform: rotate(-90deg);
+
+        -ms-transform: rotate(-90deg);
+
+        -o-transform: rotate(-90deg);
+
+        filter: progid:DXImageTransform.Miscrosoft.BasicImage (rotation=3);
+
+    }
+
+    #main #secondary {
+
+       width: 100%;
+
+    }
+
+    #menu-item-94 a, #menu-item-93 a, #menu-item-109 a, #menu-item-108 a {
+
+        font-size: 20px;
+
+        line-height: 2em;
+
+    }
+
+    #widget_sp_image-7{
+
+        padding-left: 15%;
+
+        width: 100%;
+
+    }
+
+    .slideshow_container {
+
+        padding-left: 10%;
+
+        width: 100%;
+
+    }
+
+    .location {
+
+        padding-left: 8%;
+
+    }
+
+    .tuition-scale img {
+
+        width: 100%;
+
+    }
+
+    #birth {
+
+        float: none;
+
+        width: 100%;
+
+    }
+
+    #parent2 {
+
+        float: none;
+
+        width: 100%;
+
+    }
+
+    #supplementary {
+
+        margin-left: -5%;
+
+        padding-right: 55%;
+
+        width: 100%;
+
+    }
+
+    #colophon #supplementary .widget-area {
+
+        margin-right: 0;
+
+    }
+
+}
+
+@media (max-width: 450px){
+
+    body {
+
+        padding: 0;
+
+        font-size: 1.25em;
+
+    }
+
+    img[class*="align"], img[class*="wp-image-"], #content .gallery-icon img {
+
+        width: 95%;
+
+    }
+
+    #logo {
+
+        display: none;
+
+    }
+
+    #access {
+
+        margin-right: -20%;
+
+        padding-bottom: 50px;
+
+    }
+
+    #access ul{
+
+       float: right;
+
+    }
+
+    #access li{
+
+       height: 120px; 
+
+       width: 60px;
+
+       margin-top: 40px;   
+
+    }
+
+    #access li a {
+
+        padding-top: 100px;
+
+    }
+
+    #menu-side-menu {
+
+        margin: 0 0 0 25%;
+
+    }
+
+    #main #content {
+
+        margin: 0 0 0 12%;
+
+        width: 100%;
+
+    }
+
+    .entry-content, .entry-summary {
+
+        padding: 0;
+
+    }
+
+    .name {
+
+        text-align: center;
+
+    }
+
+    .location {
+
+        padding-left: 8%;
+
+    }
+
+    #birth {
+
+        float: none;
+
+        width: 100%;
+
+    }
+
+    #parent2 {
+
+        float: none;
+
+        width: 100%;
+
+    }
+
+    #supplementary {
+
+        margin-left: -10%;
+
+        padding-right: 20px;
+
+    }
+
+    #colophon #supplementary .widget-area {
+
+        margin-left: 15%;
+
+    }
+
+}
+
+
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+
+    body {
+
+        padding: 0;
+
+        font-size: 1.25em;
+
+    }
+
+    #page {
+
+        margin-top: 0;
+
+    }
+
+    #branding {
+
+        border-top: none;
+
+    }
+
+    #access {
+
+        margin-right: -5%;
+
+    }
+
+}
+
